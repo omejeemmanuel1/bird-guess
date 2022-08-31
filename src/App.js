@@ -12,11 +12,6 @@ import  Popup from './components/Popup';
 const words = ['crow', 'peacock', 'dove', 'sparrow', 'goose', 'ostrich', 'pigeon', 'turkey', 'hawk', 'raven', 'parrot', 'flamingo', 'seagull', 'swallow', 'blackbird', 'penguin', 'robin', 'swan', 'owl', 'stork', 'woodpecker'];
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
-let playable = true;
-
-const correctLetters = [];
-const wrongLetters = [];
-
 function App() {
   const [playable, setPlayable] = useState([]);
   const [correctLetters, setCorrectLetters] = useState([]);
